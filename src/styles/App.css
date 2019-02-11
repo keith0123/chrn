@@ -1,0 +1,113 @@
+html, body, #root{
+  height:100%;
+  width: 100%; 
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #282c34;
+  width: 100%;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+}
+
+.App-header {
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 10vh;
+  flex-grow: 1;
+}
+
+.logoBox{
+  padding: .5rem;
+}
+
+.logoSvg{
+  width:100%;
+}
+
+.logo{
+  stroke: width 1px;
+  stroke:#fff;
+  fill: none; 
+  font-family:sans-serif;
+  font-size:calc(20px + .1vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+  justify-content: center;
+  flex-grow: 10;
+  padding-inline-start: 0;
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.liDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #545a66;
+  margin-left: calc(5px + 10vw);
+  margin-right: calc(5px + 10vw);
+  margin-bottom: 20px;
+  height: 50%;
+  padding: .5rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.liImgDiv{
+  width: 70px;
+  align-self: center;
+  flex-grow: 0;
+  opacity: 1;
+}
+.liImgDiv img{
+  height: 70px;
+  clip-path: circle(34px at center);
+}
+
+.li{
+  text-align: left;
+  font-size: calc(9px + 0.5vw);
+  flex-grow: 4;
+  z-index: 2;
+  margin-left: 1em;
+}
+
+a{
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
