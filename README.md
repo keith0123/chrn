@@ -1,4 +1,4 @@
-![chrn_logo](public/mstile-150x150.png)
+![chrn_logo](public/mstile-150x150.png)  
 #Chrn
 
 React Reddit/Hacker News clone that combines top posts from both.
