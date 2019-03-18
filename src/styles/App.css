@@ -31,7 +31,7 @@ html, body, #root{
 }
 
 .logoSvg{
-  width:100%;
+  width:300px;
 }
 
 .logo{
@@ -67,7 +67,6 @@ html, body, #root{
   margin-left: calc(5px + 10vw);
   margin-right: calc(5px + 10vw);
   margin-bottom: 20px;
-  height: 50%;
   padding: .5rem;
   border-radius: 4px;
   overflow: hidden;
