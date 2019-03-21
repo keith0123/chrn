@@ -21,7 +21,7 @@ class App extends Component {
         <header className="App-header">
           <div className="logoBox">
             <svg className="logoSvg" viewBox="0 0 100 30" preserveAspectRatio="xMaxYMax meet">
-              <text x="50" y="20" textAnchor="middle" className="logo">chrn</text>
+              <text x="50" y="20" textAnchor="middle" className="logo neon-flicker">chrn</text>
             </svg>
           </div>
         </header>

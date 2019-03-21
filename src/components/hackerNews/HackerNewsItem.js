@@ -63,9 +63,8 @@ class HackerNewsItem extends Component {
     return (
       <div className="hackerNewsItem">
         <a href={hackerNewsItem.url}>{hackerNewsItem.title}</a><br />
-        score: {hackerNewsItem.score}
         <br /><br />
-        <a href={HN_ITEM_URL+hackerNewsItem.id}>comments</a>
+        {hackerNewsItem.score} points | <a href={HN_ITEM_URL+hackerNewsItem.id}>{hackerNewsItem.descendants} comments</a>
       </div>
     );
   }

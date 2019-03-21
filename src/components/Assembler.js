@@ -54,7 +54,7 @@ class Assembler extends Component {
 
             if(element.chrnPostType === "reddit"){
 
-               return( <div className="liDiv" key={element.data.id}>
+               return( <div className="liDiv fade-in" key={element.data.id}>
                     <div className="liImgDiv">
                         <img src={element.data.icon_img ? element.data.icon_img : "https://www.redditstatic.com/icon.png"} alt=""/>
                     </div>
@@ -69,7 +69,7 @@ class Assembler extends Component {
 
             }else{
 
-                return (<div className="liDiv" key={element}>
+                return (<div className="liDiv fade-in" key={element}>
                     <div className="liImgDiv">
                       <img src="https://pbs.twimg.com/profile_images/378800000011494576/9c90acb704cbf9eef6135009c9bb5657_400x400.png" alt=""/>
                     </div>
