@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import 'styles/App.css';
+import 'styles/App.scss';
 import ApiCalls from 'components/ApiCalls'
 
 class App extends Component {
