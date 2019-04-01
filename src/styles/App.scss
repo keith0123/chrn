@@ -38,7 +38,6 @@ html, body, #root{
   background-color: #282c34;
   font-size: calc(10px + 2vmin);
   color: white;
-  height: 10vh;
   flex-grow: 1;
 
   @include for-phone-only {
