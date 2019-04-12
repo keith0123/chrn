@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'styles/App.scss';
+import HackerNewsLinkLogo from 'components/hackerNews/HackerNewsLinkLogo'
 
 class HackerNewsItem extends Component {
 
@@ -61,10 +62,15 @@ class HackerNewsItem extends Component {
     }
 
     return (
-      <div className="hackerNewsItem">
-        <a href={hackerNewsItem.url}>{hackerNewsItem.title}</a><br />
-        <br /><br />
-        {hackerNewsItem.score} points | <a href={HN_ITEM_URL+hackerNewsItem.id}>{hackerNewsItem.descendants} comments</a>
+      <div className="liDiv fade-in"> 
+        <HackerNewsLinkLogo url={hackerNewsItem.url}/>
+        <div className="li">
+              <div className="hackerNewsItem">
+              <a href={hackerNewsItem.url}>{hackerNewsItem.title}</a><br />
+              <br /><br />
+              {hackerNewsItem.score} points | <a href={HN_ITEM_URL+hackerNewsItem.id}>{hackerNewsItem.descendants} comments</a>
+            </div>
+        </div>
       </div>
     );
   }

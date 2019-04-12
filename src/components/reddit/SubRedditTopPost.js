@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'styles/App.scss';
+import SubRedditLinkLogo from 'components/reddit/SubRedditLinkLogo'
 
 class SubRedditTopPost extends Component {
 
@@ -15,7 +16,7 @@ class SubRedditTopPost extends Component {
 
   getTopPost = () =>{
         
-      fetch(`https://www.reddit.com/r/${this.props.subreddit}/hot/.json?print=pretty&limit=1`)
+      fetch(`https://www.reddit.com/r/${this.props.subreddit.display_name}/hot/.json?print=pretty&limit=1`)
       .then(response =>  {    
           if (response.ok) {
             return response.json();
@@ -45,11 +46,17 @@ class SubRedditTopPost extends Component {
       const BASE_REDDIT_URL = "https://www.reddit.com"
 
         return(
-
-          <div className="topPostDiv">
+          <div className="liDiv fade-in">
+            <SubRedditLinkLogo url={topPost.url} subreddit={this.props.subreddit}/>
+            <div className="li">
               <a href={topPost.url}>{topPost.title}</a>
+              <br /><br />
+              <a href={BASE_REDDIT_URL+this.props.subreddit.url}>{this.props.subreddit.display_name_prefixed}</a>
               <br />
+              {this.props.subreddit.subscribers} subs
+              <br /><br />
               {topPost.score} upvotes | <a href={BASE_REDDIT_URL+topPost.permalink}>{topPost.num_comments} comments</a>
+            </div>
           </div>
         );
     }
