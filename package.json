@@ -1,6 +1,6 @@
 {
   "name": "chrn",
-  "homepage": "https://keithleon.github.io/chrn",
+  "homepage": "https://keith0123.github.io/chrn",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,8 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "3.0.1",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.8.6",
+    "typescript": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
