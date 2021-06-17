@@ -6,7 +6,7 @@ React Reddit/Hacker News clone that combines top posts from both.
   </a>
 </p>
 <p align="center">
-  <a href="https://www.linkedin.com/in/keith-leon/">linkedin</a> | <a href="https://github.com/keith0123">github</a> | <a href="mailto:keithileon@gmail.com">keithileon@gmail.com</a>
+  <a href="https://www.linkedin.com/in/keithl-/">linkedin</a> | <a href="https://github.com/keith0123">github</a> | <a href="mailto:keithil.contact@gmail.com">keithil.contact@gmail.com</a>
 </p>
   
 # Usage
